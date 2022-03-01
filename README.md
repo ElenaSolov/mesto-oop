@@ -1,31 +1,44 @@
-# Проект: Место
+# Mesto Project
 
-### Обзор
-- Интро
+### Content:
+- Intro
 - Figma
-- Используемые технологии
+- Tech stack
+- Build Setup
+- Contacts
 
-**Интро**
+**Intro**
 
-[Mesto](https://elenasolov.github.io/mesto-project/index.html) - интерактивная страница, куда можно добавлять фотографии, удалять их и ставить лайки.
+[Mesto](https://elenasolov.github.io/mesto-oop/) - is an interactive site for users to add/delete pix, see others' pix, like them..
 
 **Figma**
 
-* [Ссылка на макет в Figma](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=28212%3A269)
+* [Link to Figma layout](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=28212%3A269)
 
-**Используемые технологии:**
+**Tech stack:**
 
 - HTML
 - CSS:
 
   * flex
   * grid
-  * медиазапросы
-  * организация файлов по методологии БЭМ
-  * Формы
+  * @media
+  * BEM structure
+  
 
 - JS: 
- * валидация форм
- * Webpack
- * модульная структура
- * подключение к серверу
+  * OOP Javascript
+  * Webpack
+  * Modules
+  * Server Requests
+  * Promises
+
+
+- Build Setup:
+
+  * $ npm install
+  * $ npm run dev (dev mode)
+  * $ npm run build (prod mode)
+
+
+Contacts : seaver@yandex.ru
