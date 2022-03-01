@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesto</title>
+<!--    <link rel="stylesheet" href="styles/index.css">-->
+  </head>
+
+  <body class="page">
+    <header class="header page__centered-block">
+      <a href="#" class="header__logo">
+        <img class="header__logo-img" src="<%=require('./images/Vector.svg')%>" alt="Логотип сайта">
+      </a>
+    </header>
+
+    <main class="main page__centered-block">
+      <section class="profile">
+        <div class="profile__user">
+          <div class="profile__avatar-container">
+            <img src="#" alt="Аватар" class="profile__avatar">
+          </div>
+          <div class="profile__info">
+            <h1 class="profile__name"></h1>
+            <button class="profile__edit-btn" type="button"></button>
+            <p class="profile__subline"></p>
+          </div>
+        </div>
+        <button class="profile__add-btn" type="button"></button>
+      </section>
+
+      <section class="elements main__centered-block main__vertical-align">
+        <ul class="elements__list"></ul>
+      </section>
+    </main>
+
+    <footer class="footer page__centered-block">
+      <p class="footer__copyright">&copy;&nbsp;2020 Mesto Russia</p>
+    </footer>
+    <div class="pop-up pop-up_type_edit-profile">
+      <div class="pop-up__container">
+        <button class="pop-up__close pop-up__close_place_edit" type="button"></button>
+        <form name="edit-profile-form" action="#" class="pop-up__form pop-up__form_place_edit">
+          <h3 class="pop-up__header">Редактировать профиль</h3>
+          <input class="pop-up__input" type="text" id="heading" name="heading" required minlength="2" maxlength="40">
+          <span class="pop-up__input-error pop-up__input-error_place_heading">Вы пропустили это поле.</span>
+          <input class="pop-up__input" type="text" id="subheading" name="subheading" required minlength="2" maxlength="200">
+          <span class="pop-up__input-error pop-up__input-error_place_subheading">Вы пропустили это поле.</span>
+          <button type="submit" class="pop-up__submit-btn pop-up__submit-btn_place_edit">Сохранить</button>
+        </form>
+        
+      </div>
+    </div>
+    <div class="pop-up pop-up_type_add-card">
+      <div class="pop-up__container">
+        <button class="pop-up__close pop-up__close_place_add" type="button"></button>
+        <form name="add-place-form" action="#" class="pop-up__form pop-up__form_place_add">
+          <h3 class="pop-up__header">Новое место</h3>
+          <input class="pop-up__input" type="text" id="place" name="place-heading" placeholder="Название" required minlength="2" maxlength="30">
+          <span class="pop-up__input-error pop-up__input-error_place_place">Вы пропустили это поле.</span>
+          <input class="pop-up__input" type="url" id="url" name="place-url" placeholder="Ссылка на картинку" required>
+          <span class="pop-up__input-error pop-up__input-error_place_url">Введите адрес сайта.</span>
+          <button type="submit" class="pop-up__submit-btn pop-up__submit-btn_place_add">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <div class="pop-up pop-up_type_confirm">
+      <div class="pop-up__container pop-up__container_place_noform">
+        <button class="pop-up__close pop-up__close_place_confirmation" type="button"></button>
+          <h3 class="pop-up__header pop-up__header_place_noform">Вы уверены?</h3>
+          <button type="button" class="pop-up__submit-btn pop-up__submit-btn_place_confirmation">Да</button>
+      </div>
+    </div>
+    <div class="pop-up pop-up_type_img">
+      <div class="pop-up__container pop-up__container_place_img">
+        <button class="pop-up__close pop-up__close_place_img" type="button"></button>
+        <figure class="pop-up__figure">
+          <img src="#" alt="" class="pop-up__img">
+          <figcaption class="pop-up__caption"></figcaption>
+        </figure>
+      </div>
+    </div>
+    <div class="pop-up pop-up_type_avatar">
+      <div class="pop-up__container">
+        <button class="pop-up__close pop-up__close_place_add" type="button"></button>
+        <form name="avatar" action="#" class="pop-up__form pop-up__form_place_avatar">
+          <h3 class="pop-up__header pop-up__header_place_noform">Обновить аватар</h3>
+          <input class="pop-up__input" type="url" id="avatar-url" name="avatar-url" placeholder="Ссылка на картинку" required>
+          <span class="pop-up__input-error pop-up__input-error_place_avatar-url">Введите адрес сайта.</span>
+          <button type="submit" class="pop-up__submit-btn pop-up__submit-btn_place_avatar">Сохранить</button>
+        </form>
+      </div>
+    </div>
+
+      <div class="pop-up pop-up_type_error">
+        <div class="pop-up__container pop-up__container_place_noform">
+          <button class="pop-up__close pop-up__close_place_confirmation" type="button"></button>
+          <h3 class="pop-up__header pop-up__header_place_noform">Что-то пошло не так...</h3>
+          <button type="button" class="pop-up__submit-btn">Выйти</button>
+        </div>
+      </div>>
+
+    <template id="card-template">
+      <li class="element">
+        <button type="button" class="element__delete"></button>
+        <img src="" alt="" class="element__img">
+        <div class="element__info">
+          <p class="element__text"></p>
+          <div class="element__likes">
+            <button type="button" class="element__like"></button>
+            <p class="element__likes-number">0</p>
+          </div>
+        </div>
+      </li>
+    </template>
+    
+  </body>
+</html>

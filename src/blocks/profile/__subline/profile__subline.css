@@ -1,0 +1,22 @@
+.profile__subline {
+  grid-area: profile__subline;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.22;
+  max-width: 400px;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
+
+@media screen and (max-width: 935px) {
+  .profile__subline {
+    font-size: 14px;
+    width: 100%;
+    max-width: 237px;
+    text-align: center;
+  }
+}

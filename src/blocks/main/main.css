@@ -1,0 +1,19 @@
+.main {
+  box-sizing: border-box;
+  max-width: 880px;
+  padding: 40px 0 0;
+  min-height: 65vh;
+}
+
+@media screen and (max-width: 1023px) {
+  .main {
+    width: calc(100% - 19px*2);
+    
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .main{
+    min-height: 76vh;
+  }
+}

@@ -1,0 +1,14 @@
+.element__text {
+  margin: 0;
+  padding: 0;
+  max-width: 220px;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+  white-space: nowrap; /* Запрещаем перенос строк */
+  overflow: hidden; /* Обрезаем все, что не помещается в область */
+  text-overflow: ellipsis; /* Добавляем многоточие */
+}
